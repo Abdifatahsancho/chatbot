@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #4a6fa5;
-    --secondary-color: #166088;
-    --accent-color: #4fc3f7;
-    --background-color: #f5f7fa;
+    --primary-color: #3f51b5;
+    --secondary-color: #303f9f;
+    --accent-color: #ff4081;
+    --background-color: #f5f5f7;
     --light-gray: #e0e0e0;
     --dark-gray: #333333;
     --success-color: #66bb6a;
@@ -37,6 +37,28 @@ header {
     border-bottom: 1px solid var(--light-gray);
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.bot-logo {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 header h1 {
     color: var(--primary-color);
     margin-bottom: 10px;
@@ -53,6 +75,7 @@ header p {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     overflow: hidden;
+    border: 2px solid var(--accent-color);
 }
 
 .chat-messages {
@@ -88,8 +111,8 @@ header p {
 }
 
 .bot-message .message-content {
-    background-color: var(--light-gray);
-    color: var(--dark-gray);
+    background-color: var(--accent-color);
+    color: var(--primary-color);
     border-top-left-radius: 4px;
 }
 
@@ -169,7 +192,7 @@ header p {
 }
 
 .feature h3 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
@@ -233,8 +256,8 @@ code {
 }
 
 .file-upload-btn:hover {
-    color: #4a6ee0;
-    background-color: rgba(74, 110, 224, 0.1);
+    color: var(--primary-color);
+    background-color: var(--accent-color);
 }
 
 .file-name {
