@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sancho's Bot - Academic Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-robot"></i> Sancho's Bot</h1>
+            <p>Your Academic & Technical Assistant</p>
+        </header>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>👋 Hi, I'm Sancho's Bot! I'm here to help with your academic and technical needs. How can I assist you today?</p>
+                        <p>You can now upload PDFs, images, or other files for me to analyze!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <div class="file-upload-container">
+                    <label for="fileUpload" class="file-upload-btn" title="Upload a file">
+                        <i class="fas fa-paperclip"></i>
+                    </label>
+                    <input type="file" id="fileUpload" accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png" hidden>
+                    <span id="fileName" class="file-name"></span>
+                </div>
+                <textarea id="userInput" placeholder="Ask me anything about coding, math, studying..."></textarea>
+                <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-code"></i>
+                <h3>Coding Help</h3>
+                <p>Get assistance with Python, JavaScript, C++, and more</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-calculator"></i>
+                <h3>Math Solutions</h3>
+                <p>Help with calculus, linear algebra, and discrete math</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-file-pdf"></i>
+                <h3>File Analysis</h3>
+                <p>Upload PDFs for summaries, notes & quizlets</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-tasks"></i>
+                <h3>Study Planning</h3>
+                <p>Organize assignments and prepare for exams</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Sancho's Bot | Powered by AI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
